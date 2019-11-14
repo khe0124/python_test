@@ -133,6 +133,7 @@ print(sess.run(hello))
 
 
 ① 해석
+```python
 ---------------------------------------------------------------------- 매출예측.py
 import tensorflow as tf
 
@@ -175,11 +176,11 @@ for i in range(5001) :
      if i%500 == 0 :
          print(i, sess.run(cost, feed_dict={X: xData, Y: yData}), sess.run(W), sess.run(b))
 print(sess.run(H, feed_dict={X: [8]}))
-
+```
  
 
  
-
+```python
 ② 원본
 ---------------------------------------------------------------------- 매출예측.py
 import tensorflow as tf
@@ -204,3 +205,4 @@ for i in range(5001) :
          print(i, sess.run(cost, feed_dict={X: xData, Y: yData}), sess.run(W), sess.run(b))
 print(sess.run(H, feed_dict={X: [8]}))
 ---------------------------------------------------------------------
+```
